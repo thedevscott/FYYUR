@@ -1,2 +1,4 @@
 .idea
 __pycache__
+.vscode
+load_db.py

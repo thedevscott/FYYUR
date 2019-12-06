@@ -226,12 +226,6 @@ def create_venue_form():
 @app.route('/venues/create', methods=['POST'])
 def create_venue_submission():
     try:
-        form = VenueForm(request.form)
-        if form.validate_on_submit():
-            print('valid form')
-        else:
-            print('invalid')
-
         venue = Venue(name=request.form['name'],
                       city=request.form['city'],
                       state=request.form['state'],
